@@ -5,15 +5,17 @@ function getRandomHexColor() {
 }
 const boxesContainer = document.querySelector('#boxes');
 function createBoxes(amount) {
-    const boxSize = 30;
-    boxesContainer.innerHTML = '';
-    for (let i = 0; i < amount; i+=1) {
+  const boxSize = 30;
+  const boxes = [];
+  boxesContainer.innerHTML = '';
+  for (let i = 0; i < amount; i+=1) {
     const box = document.createElement('div');
     box.style.width = `${boxSize + i * 10}px`;
     box.style.height = `${boxSize + i * 10}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxesContainer.append(box);
+    boxes.push(box);
   }
+  boxesContainer.append(...boxes);
 }
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
