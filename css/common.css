@@ -213,7 +213,6 @@ h1, #name-output {
 .input-element {
   border: 1px solid #808080;
   border-radius: 8px;
-  /* padding: 8px 72px; */
   width: 150px;
   height: 40px;
   font-family: inherit;
