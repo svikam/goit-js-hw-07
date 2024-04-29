@@ -6,3 +6,7 @@ categories.forEach(category => {
     console.log(`Category: ${title}`);
     console.log(`Elements: ${items.length}`);
 })
+const itemList = document.querySelectorAll('#categories li.item > ul > li');
+itemList.forEach(element => {
+    element.classList.add('item-element')
+})

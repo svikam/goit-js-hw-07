@@ -31,3 +31,7 @@ createButton.addEventListener('click', () => {
 destroyButton.addEventListener('click', () => {
   destroyBoxes();
 })
+
+inputElement.classList.add('input-element');
+createButton.classList.add('btn-create');
+destroyButton.classList.add('btn-destroy');

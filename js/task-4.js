@@ -16,3 +16,15 @@ function handlesubmit(event) {
     form.reset();
 }
 
+const inputFields = loginForm.querySelectorAll('input');
+inputFields.forEach(input => {
+    input.classList.add('input-form');
+})
+
+const labels = loginForm.querySelectorAll('label');
+labels.forEach(label => {
+    label.classList.add('label-form');
+})
+
+const buttonLogIn = loginForm.querySelector('button');
+buttonLogIn.classList.add('btn-login');

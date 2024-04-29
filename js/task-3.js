@@ -9,3 +9,4 @@ function handleInput() {
     nameOutput.textContent = name;
     }
 }
+
